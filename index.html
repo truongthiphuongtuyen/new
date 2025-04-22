@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crocs Terre - Mua Ngay</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+	<script src="js/scripts.js"></script>
+<body>
+  <header>
+    <span>Đón đầu xu hướng với giày dép <a href="#">MỚI NHẤT 2025</a></span>
+    <span><a href="#">ĐĂNG KÝ VÀ NHẬN 100.000 VNĐ</a> | <a href="#">TÀI KHOẢN</a></span>
+  </header>
+
+  <nav>
+    <a href=""></a><div><img src="img/logo-no-tag.png" alt=""></div>
+    <ul>
+      <li><a href="#">NỮ</a></li>
+      <li><a href="#">NAM</a></li>
+      <li><a href="#">TRẺ EM</a></li>
+      <a href="jibbitz.html">JIBBITZ</a>
+      <li><a href="#">SANDALS</a></li>
+      <li><a href="#" class="highlight-link">XU HƯỚNG</a></li>
+      <li><a href="#">ƯU ĐÃI</a></li>
+    </ul>
+    <input type="text" placeholder="Tìm kiếm" class="search-box">
+  </nav>
+
+  <div class="highlight">
+    🌸 Biến hoá phong cách của bạn với deal <strong>MUA 2 TẶNG 1</strong> dành cho <strong>Jibbitz Set</strong> - <a href="#">Mua Ngay</a> 💛
+  </div>
+	
+  <div class="slider-container">
+    <div class="slider">
+      <div class="slide"><img src="img/banner1.png" alt=""></div>
+      <div class="slide"><img src="img/banner2.png" alt=""></div>
+	  <div class="slide"><img src="img/banner3.png" alt=""></div>
+    </div>
+
+    <div class="dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </div>
+<script>
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dot');
+    const slider = document.querySelector('.slider');
+    let currentIndex = 0;
+
+    function goToSlide(index) {
+      slider.style.transform = `translateX(-${index * 100}%)`;
+
+      dots.forEach(dot => dot.classList.remove('active'));
+      dots[index].classList.add('active');
+
+      currentIndex = index;
+    }
+
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => {
+        goToSlide(index);
+      });
+    });
+
+    goToSlide(0); // khởi động
+  </script>
+  <!-- Banner chính -->
+  <div class="hero-banner">
+	  <div class="slider-container">
+  <div class="slider">
+  
+  
+  </div>
+  <div class="dots">
+    <span class=".dot" onclick="currentSlide(1)"></span>
+    <span class=".dot" onclick="currentSlide(2)"></span>
+   
+  </div>
+</div>
+	</div>  
+	
+	
+	<!-- MENU -->
+<div class="menu">
+  <button class="active"><span>Nữ</span></button>
+  <button><span>Nam</span></button>
+  <button><span>Trẻ Em</span></button>
+  <button><span>Jibbitz</span></button>
+</div>
+
+<!-- DANH MỤC SẢN PHẨM -->
+<div class="categories" id="category-list">
+  <div class="category">
+    <img src="img/anh1.webp" alt="">
+    <p>Loyalty</p>
+  </div>
+  <div class="category">
+    <img src="img/anh2.webp" alt="">
+    <p>Hàng Mới</p>
+  </div>
+  <div class="category">
+    <img src="img/anh3.webp" alt="">
+    <p>Giày Đế Cao</p>
+  </div>
+  <div class="category">
+    <img src="img/anh4.webp" alt="">
+    <p>Bán Chạy</p>
+  </div>
+  <div class="category">
+    <img src="img/anh5.webp" alt="">
+    <p>Online Only</p>
+  </div>
+  <div class="category">
+    <img src="img/anh6.webp" alt="">
+    <p>Classics</p>
+  </div>
+</div>
+
+<!-- TIÊU ĐỀ -->
+<h2>🌻 HÀNG MỚI 🌻</h2>
+
+	<script src="js/scripts.js"></script>
+	<script>
+  const buttons = document.querySelectorAll('.menu button');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      buttons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+    });
+  });
+</script>
+</body>
+</html>
+
